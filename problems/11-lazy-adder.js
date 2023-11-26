@@ -23,6 +23,17 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 function lazyAdder(firstNum) {
+  let x = firstNum;
+
+  return num => {
+    let y = num;
+
+    return num => {
+      let z = num;
+
+      return x + y + z;
+    }
+  }
   // Your code here
 }
 
